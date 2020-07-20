@@ -1,1 +1,3 @@
-# lets-travel
+# Lets Travel!
+
+Simple travelling agency project.
