@@ -60,7 +60,7 @@ app.get('/login', (req, res) => {
   res.render('login');
 })
 
-mongoose.connect('mongodb://localhost/travels', {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect('mongodb+srv://letstravel:letstravel@cloudappsmongo.wmqp9.mongodb.net/travels?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true});
 
 app.listen(3000, () => {
   console.log("Application listening on port 3000...");
