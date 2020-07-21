@@ -62,6 +62,7 @@ app.get('/login', (req, res) => {
 
 mongoose.connect('mongodb+srv://letstravel:letstravel@cloudappsmongo.wmqp9.mongodb.net/travels?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true});
 
-app.listen(3000, () => {
-  console.log("Application listening on port 3000...");
+let port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log(`Application listening on port ${port}...`);
 });
